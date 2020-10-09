@@ -1,0 +1,168 @@
+body {
+   margin: 0;
+   padding: 0;
+   background-image: url("966778.jpg");
+   background-size: cover;
+}
+ main {
+   display: flex;
+}
+.sidebar {
+  width: 70px;
+  height: 100vh;
+}
+p {
+  margin-top: 20px;
+  font-family: 'Fredoka One', cursive;
+  font-size: 25px;
+  color: grey;
+  display: none;
+}
+.postsbar {
+  width: 86%;
+  height: 100vh;
+}
+svg {
+  padding: 20px 20px 0 10px;
+  width: 33px;
+  height: 33px;
+  fill: grey;
+}
+nav {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+ul {
+  margin: 0;
+  list-style: none;
+  padding-left: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+a {
+  list-style: none;
+  display: flex;
+	align-items: flex-start;
+	align-content: center;
+  text-decoration: none;
+  z-index: 2;
+}
+.post, li:hover a, li:hover p, li:hover svg, span:hover svg {
+  color: white;
+  fill: white;
+  cursor: pointer;
+}
+.container {
+  min-width: 20%;
+  border-radius: 0 15px 15px;
+  text-align: left;
+  background: radial-gradient(circle, rgba(255,133,51,1) 30%, rgba(230,46,0,1) 100%);
+  padding: 20px;
+  margin: 20px 20px 0 10px;
+}
+.container, label span, h4, .submit {
+  color: #ffeb99;
+}
+h2 {
+  margin: 0 0 5px 0;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #1a1a1a;
+  letter-spacing: 2px;
+  font-size: 22px;
+}
+span, h4, h2, input, textarea {
+  font-family: 'Roboto', sans-serif;
+}
+span {
+  font-size: 12px;
+}
+.split {
+  display: flex;
+  justify-content: space-between;
+}
+.postform {
+  padding-top: 150px;
+  position: relative;
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+}
+label span {
+  font-size: 22px;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+input, textarea {
+  position: relative;
+  width: 320px;
+  border-radius: 1em;
+  margin-bottom: 20px;
+  border: none;
+  outline: none;
+  font-size: 15px;
+
+}
+input {
+  height: 45px;
+  padding-left: 15px;
+}
+textarea {
+  height: 120px;
+  padding: 15px 0 0 15px;
+}
+h4, form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h4 svg {
+  padding: 10px 0;
+  width: 48px;
+  height: 48px;
+}
+.submit {
+  width: 335px;
+  height: 50px;
+  background: radial-gradient(circle, rgba(255,133,51,1) 30%, rgba(230,46,0,1) 100%);
+  font-family: 'Fredoka One', cursive;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+@media screen and (min-width:800px) {
+  p {
+    display: block;
+  }
+  .sidebar {
+    width: 200px;
+    height: 100vh;
+    border-right: 1px solid grey;
+  }
+  .container {
+    width: calc(42% - 5px);
+    margin: 20px 0 0 20px;
+  }
+  .poster {
+    fill: white;
+    height: 70px;
+    width: 70px;
+  }
+  input, textarea {
+    width: 500px;
+  }
+  .postform {
+    padding-top: 120px;
+    width: 86%;
+  }
+  .submit {
+    width: 515px;
+  }
+}
